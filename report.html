@@ -1,0 +1,54 @@
+<html>
+<style>
+    #header {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        background-color: lightblue;
+        border: 0px;
+        border-radius: 20px;
+    }
+    
+    html {
+        background-color: rgb(62, 139, 165);
+    }
+</style>
+
+<head>
+    <div id="header">
+        <img src="images.png">
+    </div>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>CREW ID</th>
+            <th>NAME</th>
+            <th>STATUS</th>
+            <th>SIGNON</th>
+            <th>SIGNON TIME</th>
+            <th>SIGNOFF</th>
+            <th>SIGNOFF TIME</th>
+            <th>DISTANCE</th>
+        </tr>
+        <?php
+$conn = mysqli_connect("localhost", "root", "", "company");
+  // Check connection
+  if ($conn->connect_error) {
+   die("Connection failed: " . $conn->connect_error);
+  } 
+  $sql = "SELECT id, username, password FROM login";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) {
+   // output data of each row
+   while($row = $result->fetch_assoc()) {
+
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

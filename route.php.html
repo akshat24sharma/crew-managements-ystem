@@ -1,0 +1,88 @@
+<html>
+
+<style>
+    #header {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        background-color: lightblue;
+        border: 0px;
+        border-radius: 20px;
+    }
+    
+    #biodata {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        position: relative;
+        border: 2px solid black;
+        border-radius: 20px;
+        box-sizing: border-box;
+        top: 4cm;
+        background-color: lightblue;
+        border-left-width: 10px;
+    }
+    
+    #body {
+        margin-left: 5cm;
+        margin-right: 5cm;
+    }
+    
+    input {
+        width: 30%;
+        height: 40px;
+        border-bottom: 2px solid black;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 20px;
+        font-size: 25px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    html {
+        background-color: rgb(62, 139, 165);
+    }
+</style>
+
+
+<head>
+    <div id="header">
+        <img src="images.png">
+    </div>
+
+</head>
+<?php
+ $from=$_POST['from'];
+ $to=$_POST['destination'];
+ $sum=$from+$to;
+ 
+?>
+
+    <div id="body">
+
+        <body>
+            <div id="biodata">
+                <form method="POST" action="crewid.php">
+                    From :<br>
+                    <div id="username1"><input type="text" name="from" size="55"></div>
+                    Destination:
+                    <br>
+                    <div id="password1"><input type="text" name="destination" maxlength="12"></div>
+                    Distance<br>
+                    <div id="distance"><input type="text" name="distance" size="55"> </div>
+                    Crew ID:<br>
+                    <div id="id"><input type="text" name="crewid" value="<?php echo @$sum;?>" /> </div>
+
+                    <div id="submit"><input type="submit" name="submit"> </div>
+
+
+                </form>
+            </div>
+
+        </body>
+
+    </div>
+
+
+</html>
