@@ -1,0 +1,88 @@
+<html>
+
+<style>
+    #header {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        background-color: lightblue;
+        border: 0px;
+        border-radius: 20px;
+    }
+    
+    #form-login {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        position: relative;
+        border: 2px solid black;
+        border-radius: 20px;
+        box-sizing: border-box;
+        top: 4cm;
+        background-color: lightblue;
+        border-left-width: 10px;
+    }
+    
+    #body {
+        margin-left: 5cm;
+        margin-right: 5cm;
+    }
+    
+    input {
+        width: 30%;
+        height: 40px;
+        border-bottom: 2px solid black;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 20px;
+        font-size: 25px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    html {
+        background-color: rgb(62, 139, 165);
+    }
+    
+    #header-text {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 40px;
+        border: 2px solid black;
+        border-radius: 20px;
+        box-sizing: border-box;
+        top: 4cm;
+        background-color: lightblue;
+        border-left-width: 10px;
+    }
+</style>
+
+<head>
+    <div id="header">
+        <img src="images.png">
+        <div id="header-text">LOGIN</div>
+    </div>
+
+</head>
+<div id="body">
+
+    <body>
+        <div id="form-login">
+            <form method="POST" action="loginvalid.php">
+                Username:<br>
+                <div id="username1"><input type="text" name="username1" size="55"></div>
+                Password:
+                <br>
+                <div id="password1"><input type="password" name="password1" maxlength="12"></div>
+                <br>
+                <div id="submit"><input type="submit" name="submit"> </div>
+
+
+            </form>
+        </div>
+
+    </body>
+
+</div>
+
+</html>
